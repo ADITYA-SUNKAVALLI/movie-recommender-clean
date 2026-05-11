@@ -14,9 +14,11 @@ FILE_ID = "1zh6Yew0IZwFs4JYo3DmlUXfmK2dhin-9"
 
 if not os.path.exists("similarity.pkl"):
 
-    url = f"https://drive.google.com/uc?id={FILE_ID}"
-
-    gdown.download(url, "similarity.pkl", quiet=False, fuzzy=True)
+    gdown.download(
+        f"https://drive.google.com/uc?export=download&id={FILE_ID}",
+        "similarity.pkl",
+        quiet=False
+    )
 
 
 # --- CONFIG ---
