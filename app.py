@@ -13,10 +13,10 @@ from urllib3.util.retry import Retry
 FILE_ID = "1zh6Yew0IZwFs4JYo3DmlUXfmK2dhin-9"
 
 if not os.path.exists("similarity.pkl"):
-    
+
     url = f"https://drive.google.com/uc?id={FILE_ID}"
-    
-    gdown.download(url, "similarity.pkl", quiet=False)
+
+    gdown.download(url, "similarity.pkl", quiet=False, fuzzy=True)
 
 
 # --- CONFIG ---
