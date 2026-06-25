@@ -60,7 +60,7 @@ pip install -r requirements.txt
 Get a free API key at [themoviedb.org](https://www.themoviedb.org/settings/api) and add it to `app.py`:
 
 ```python
-API_KEY = "aee7c45af0a6b1bcab47d7bd3508363b"
+API_KEY = "TMDB_API_KEY"
 ```
 
 ### 4. Run the app
